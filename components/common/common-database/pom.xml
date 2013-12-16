@@ -78,7 +78,7 @@
                         </database>
                         <target>
                             <packageName>pl.agileit.trader.common.database</packageName>
-                            <directory>components/common/common-database/target/generated-sources/</directory>
+                            <directory>components/common/common-database/src/main/java/</directory>
                         </target>
                         <generate>
                             <relations>true</relations>
