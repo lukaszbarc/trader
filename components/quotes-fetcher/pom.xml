@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>pl.agileit.trader</groupId>
+        <artifactId>components</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <groupId>pl.agileit.trader</groupId>
+    <artifactId>quotes-fetcher</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>Quotes fetcher</name>
+    <modules>
+        <module>quotes-fetcher-batch</module>
+        <module>quotes-fetcher-model</module>
+        <module>quotes-fetcher-api</module>
+        <module>quotes-fetcher-impl</module>
+        <module>quotes-fetcher-resources-api</module>
+        <module>quotes-fetcher-resources-impl</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>pl.agileit.trader</groupId>
+            <artifactId>common-config</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+</project>
